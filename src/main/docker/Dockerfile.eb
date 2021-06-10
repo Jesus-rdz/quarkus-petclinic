@@ -47,7 +47,7 @@ RUN echo $JAVA_OPTIONS
 COPY *-runner.jar /deployments/app.jar
 COPY config /deployments/config
 
-EXPOSE 5000
+EXPOSE 8080
 USER 1001
 
 ENTRYPOINT [ "/deployments/run-java.sh" ]
